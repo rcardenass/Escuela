@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_rsAnio" value="name:CodAnio;datatype:int,name:NombreAnio;datatype:string" />
+	<infoitem key="UD_rsArea" value="name:CodArea;datatype:int,name:NombreArea;datatype:string" />
+	<infoitem key="UD_rsGrado" value="name:CodGrado;datatype:int,name:NombreGrado;datatype:string" />
+	<infoitem key="UD_rsTreeview" value="name:Id;datatype:int,name:Nombre;datatype:string,name:IdPadre;datatype:int,name:Url;datatype:string" />
+	<infoitem key="UD_rsEdit" value="name:CodCriterio;datatype:int,name:CodAnio;datatype:int,name:CodArea;datatype:int,name:CodGrado;datatype:int,name:NombreCriterio;datatype:string,name:Porcentaje;datatype:int" />
+	<infoitem key="UD_rsEditar" value="name:CodCriterio;datatype:int,name:CodAnio;datatype:int,name:CodArea;datatype:int,name:CodGrado;datatype:int,name:NombreCriterio;datatype:string,name:Porcentaje;datatype:int" />
+</info>

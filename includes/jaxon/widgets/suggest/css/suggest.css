@@ -1,0 +1,39 @@
+input.suggest {
+	width:150px;
+	border: 1px solid #525e94;
+	line-height: 16px;
+	height: 16px;
+}
+div.suggest_choices {
+	position: absolute;
+	/*initial position out of the viewport*/
+	left:-9000px;
+	z-index: 999;
+	border: 1px solid #000000;
+	background-color: #ffffff;
+	width: 150px;
+	font-family: verdana,arial,helvetica;
+	font-size: 11px;
+	color: #000000;
+	overflow: hidden;
+	text-align: left;
+}
+div[class="suggest_choices"]{
+	margin-top: 1px;
+}
+div.suggest_choices ul {
+	margin: 0px;
+	padding: 0px;
+}
+div.suggest_choices ul li {
+	list-style-type: none;
+	padding: 3px;
+}
+div.suggest_choices ul li.yui-ac-highlight{
+	background-color: #2D76D8;
+	color: #ffffff;
+}
+div.suggest_choices em {
+	font-style: normal;
+	font-weight: bold;
+}

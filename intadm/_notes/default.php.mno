@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_rsTreeview" value="name:Id;datatype:int,name:Nombre;datatype:string,name:IdPadre;datatype:int,name:Url;datatype:string" />
+	<infoitem key="MM_css_include" value="file:///C|/Users/ruben.cardenas/AppData/Roaming/Macromedia/Dreamweaver 8/Configuration/Temp/InterAKT/DesignTime/intadmdefaultphp1_tabset.css,file:///C|/Documents and Settings/rcardenas/Datos de programa/Macromedia/Dreamweaver 8/Configuration/Temp/InterAKT/DesignTime/intadmdefaultphp1_tabset.css" />
+</info>

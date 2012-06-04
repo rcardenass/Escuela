@@ -1,0 +1,51 @@
+/* 
+ * the rater widget main display settings
+ */
+div.rater {
+	display: inline;
+	white-space: nowrap;
+}
+
+/*
+ * sample skin for rated articles
+ */
+.article {
+	border: 1px solid #dedede;
+	background-color: #eaeaea;
+	width: 50%;
+	margin-bottom: 10px;
+	padding: 5px;
+	font-family: verdana,arial,helvetica;
+}
+
+.article h1 {
+	font-size: 25px;
+	color: gray;
+	margin: 5px;
+}
+
+.article .content {
+	font-size: 12px;
+}
+
+.article .rateit {
+	display: inline;
+	font-weight: bold;
+}
+
+/*
+ * sample skin for any rate widget form controll
+ */
+form.rateControll {
+	font-family: Georgia,Times,Time New Roman,_serif;
+	font-size: 12px;
+	display: block;
+	padding: 5px;
+	border: 1px solid gray;
+	background: #dedede;
+	width: 50%;
+	text-align: right;
+}
+form.rateControll label {
+	padding-right: 5px;
+}

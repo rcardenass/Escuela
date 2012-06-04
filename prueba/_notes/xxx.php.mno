@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_rsPersonal" value="name:CodPersonal;datatype:int,name:ApellidoPaterno;datatype:string,name:ApellidoMaterno;datatype:string,name:Nombres;datatype:string,name:EmailPersonal;datatype:string" />
+	<infoitem key="UD_rsDep" value="name:CodDepartamento;datatype:string,name:Nombre;datatype:string" />
+	<infoitem key="UD_rsProv" value="name:CodDepartamento;datatype:string,name:CodProvincia;datatype:string,name:Suma;datatype:string,name:Nombre;datatype:string" />
+	<infoitem key="UD_rsDist" value="name:CodDepartamento;datatype:string,name:CodProvincia;datatype:string,name:CodDistrito;datatype:string,name:Suma;datatype:string,name:Nombre;datatype:string" />
+</info>

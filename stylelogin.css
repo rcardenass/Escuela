@@ -1,0 +1,35 @@
+body {
+	/*font-family: Arial, Helvetica, sans-serif;*/
+	background:#ffffff;
+}
+.EsquinaSupIzq{
+	/*background-color:#009900;*/
+	background:url(imagenes/sistema/superior_izq.jpg);
+	background-repeat:no-repeat;
+}
+.EsquinaSupDer{
+	/*background-color:#009900;*/
+	background:url(imagenes/sistema/superior_der.jpg);
+	background-repeat:no-repeat;
+}
+.SuperiorCentro{
+	/*background-color:#009900;*/
+	background:url(imagenes/sistema/superior_cen.jpg);
+	background-repeat:repeat-x;
+}
+
+.EsquinaInfIzq{
+	/*background-color:#009900;*/
+	background:url(imagenes/sistema/inferior_izq.jpg);
+	background-repeat:no-repeat;
+}
+.EsquinaInfDer{
+	/*background-color:#009900;*/
+	background:url(imagenes/sistema/inferior_der.jpg);
+	background-repeat:no-repeat;
+}
+.InferiorCentro{
+	/*background-color:#009900;*/
+	background:url(imagenes/sistema/inferior_cen.jpg);
+	background-repeat:repeat-x;
+}

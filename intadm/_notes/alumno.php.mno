@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_rsTreeview" value="name:Id;datatype:int,name:Nombre;datatype:string,name:IdPadre;datatype:int,name:Url;datatype:string" />
+	<infoitem key="UD_rsPersonal" value="name:CodAlumno;datatype:int,name:Alumno;datatype:string,name:FechaNacimiento;datatype:datetime,name:Telefono;datatype:string,name:Anio;datatype:string,name:GradoSeccion;datatype:string" />
+</info>

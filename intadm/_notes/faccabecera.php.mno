@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_rsDeudaFiada" value="name:Pagar;datatype:real" />
+	<infoitem key="UD_rsDeudaPension" value="name:Pagar;datatype:real" />
+	<infoitem key="UD_rsMoraPension" value="name:Pagar;datatype:real" />
+</info>

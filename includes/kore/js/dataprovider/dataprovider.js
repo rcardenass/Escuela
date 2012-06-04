@@ -1,0 +1,5 @@
+
+if(!Kore){var Kore={};}
+Kore.DataProvider=Class.create();Kore.DataProvider.prototype={URL:null,options:null,content:null,error:null,transport:null,updateEvent:null,startEvent:null,initialize:function(_1,_2){this.URL=_1?_1:null;this.setOptions(_2);this.updateEvent=new YAHOO.util.CustomEvent("update",this);this.startEvent=new YAHOO.util.CustomEvent("start",this);},setOptions:function(_3){this.options=_3?_3:{};var _4=this.options.onComplete||function(){};var _5=this;this.options.onComplete=function(t,_7){_5.transport=t.transport;if(t.error){_5.error=t.error;}else{_5.content=t.transport.responseText;}
+_5.onComplete();_5.updateEvent.fire(_5);};},getContent:function(){this.startEvent.fire(this);this.content=null;this.error=null;if(this.URL==null){this.error=new Kore.Error(Kore.Error.ERR_NO_URL,"The data provider must point to a URL location.");this.updateEvent.fire(this);return;}
+new Kore.Transporter(this.URL,this.options);},onComplete:function(){}};

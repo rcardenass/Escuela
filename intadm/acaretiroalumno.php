@@ -1,0 +1,135 @@
+<?php include("../seguridad.php");?>
+<?php require_once('../Connections/cn.php'); ?>
+<?php include('../funciones.php'); ?>
+<?php 
+include("../clases/datos.php");
+$objDatos=new datos();
+?>
+<?php
+$rsTreeview = $objDatos->ObtenerMenuAdministrativoSelAll($_SESSION['MM_Username']);
+$row_rsTreeview = $objDatos->PoblarMenuAdministrativoSelAll($rsTreeview);
+$totalRows_rsTreeview = mysql_num_rows($rsTreeview);
+
+$_SESSION['Buscar']=$_POST['txtBuscar'];
+
+/*mysql_select_db($database_cn, $cn);
+$query_rsAlumno = "SELECT a.CodAlumno, Concat(a.ApellidoPaterno,' ',a.ApellidoMaterno,' ',a.Nombres) AS Alumno, ";
+$query_rsAlumno.= "DATE_FORMAT(a.FechaNacimiento,'%d/%m/%y') AS FechaNacimiento, a.Telefono, ";
+$query_rsAlumno.= "(SELECT y.NombreAnio ";
+$query_rsAlumno.= "FROM matricula x ";
+$query_rsAlumno.= "INNER JOIN anio y ON y.CodAnio=x.CodAnio ";
+$query_rsAlumno.= "WHERE x.CodAlumno=a.CodAlumno ";
+$query_rsAlumno.= "ORDER BY x.CodMatricula DESC limit 1) AS Anio, ";
+$query_rsAlumno.= "(SELECT concat(y.NombreGrado,' - ',z.NombreSeccion) ";
+$query_rsAlumno.= "FROM matricula x ";
+$query_rsAlumno.= "INNER JOIN grado y ON y.CodGrado=x.CodGrado ";
+$query_rsAlumno.= "INNER JOIN seccion z ON z.CodSeccion=x.CodSeccion ";
+$query_rsAlumno.= "WHERE x.CodAlumno=a.CodAlumno ORDER BY x.CodMatricula DESC limit 1) AS GradoSeccion ";
+$query_rsAlumno.= "FROM alumno a ";
+$query_rsAlumno.= "where Concat(a.ApellidoPaterno,' ',a.ApellidoMaterno,'',a.Nombres) LIKE '%".$_SESSION['Buscar']."%' limit 20 ";
+$rsAlumno = mysql_query($query_rsAlumno, $cn) or die(mysql_error());
+$row_rsAlumno = mysql_fetch_assoc($rsAlumno);
+$totalRows_rsAlumno = mysql_num_rows($rsAlumno);*/
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/templateadm.dwt.php" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Gestion Escolar</title>
+<link rel="stylesheet" href="../treeview/dtree.css" type="text/css" />
+<script type="text/javascript" src="../treeview/dtree.js"></script>
+<script src="../js/jquery.js" type="text/javascript"></script>
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" -->
+<script language="javascript">
+$(document).ready(function() {
+    $().ajaxStart(function() {
+        $('#loading').show();
+        $('#lista').hide();
+    }).ajaxStop(function() {
+        $('#loading').hide();
+        $('#lista').fadeIn('slow');
+    });
+    $('#form, #fat, #form1').submit(function() {
+        $.ajax({
+            type: 'POST',
+            url: $(this).attr('action'),
+            data: $(this).serialize(),
+            success: function(data) {
+                $('#lista').html(data);
+
+            }
+        })
+        
+        return false;
+    }); 
+})  
+</script>
+<!-- InstanceEndEditable -->
+<link href="../styleadm.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<table width="90%" border="0" align="center"><tr><td>
+	<table width="100%" border="0" cellpadding="0">
+		<tr>
+			<td colspan="2"><? require_once("../cabecera.php"); ?></td>
+		</tr>
+		<tr>
+		<td width="200" valign="top" class="Menu">
+		<div style="padding-left:10px">	
+			<div class="dtree">
+				<div style="height:5px"></div>
+				<a href="javascript: d.openAll();">Abrir todo</a> | <a href="javascript: d.closeAll();">Cerrar todo</a>
+				<div style="height:10px"></div>
+				<script type="text/javascript">
+					d = new dTree('d');
+					d.add(0,-1,'Inicio');
+					<?php do { ?>
+						d.add(<?php echo $row_rsTreeview['Id']; ?>,<?php echo $row_rsTreeview['IdPadre']; ?>,'<?php echo $row_rsTreeview['Nombre']; ?>','<?php echo $row_rsTreeview['Url']; ?>');
+					<?php } while ($row_rsTreeview = mysql_fetch_assoc($rsTreeview)); ?>
+					document.write(d);
+				</script>
+			</div>
+		</div>
+		<div style="height:10px"></div>
+		</td>
+		<td valign="top" class="Contenedor">
+		<div style = "width: 99%; padding-left:5px" class="Contenedor">
+		<!-- InstanceBeginEditable name="Contenido" -->
+		<h1>Maestro de Alumnos</h1><hr /><br />
+		<form id="form1" name="form1" method="post" autocomplete="Off" action="php/acaretiroalumno.php">
+		<table width="420px" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="55px"><span class="label">Buscar</span></td>
+            <td width="235px">
+              <input name="txtBuscar" type="text" id="txtBuscar" style="width:220px" maxlength="20" />
+            </td>
+            <td align="right">
+              <input type="submit" name="Submit" value="Buscar" />
+            </td>
+			<td align="right">
+			  <input type="button" name="button" id="button" value="Volver"  
+		onclick='javascript: self.location.href=&quot;acanewretiro.php&quot;'/>
+            </td>
+          </tr>
+        </table>
+		<div style="height:5px"></div>
+		<div id="lista" style="width:95%"></div>
+        </form>
+		<!-- InstanceEndEditable -->
+		</div>
+		<div style="height:10px"></div>
+		</td>
+		</tr>
+		<tr>
+			<td colspan="2"><? require_once("../pie.php"); ?></td>
+		</tr>
+	</table>
+</td></tr></table>
+</body>
+<!-- InstanceEnd --></html>
+<?php
+mysql_free_result($rsTreeview);
+?>

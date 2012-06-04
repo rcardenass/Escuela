@@ -1,0 +1,65 @@
+/**
+ * All items that can be dragged.
+ */
+.drag_item {
+	cursor:move;
+	border: 1px solid white;
+	margin: 20px;
+}
+
+
+
+/**
+ * All items that can be dragged while the
+ * mouse hovers them.
+ */
+.drag_item_over {
+	border: 1px solid #aaa;
+}
+
+
+
+/**
+ * All items that can be dragged while durring
+ * a drag. Until removing the mouse, a special
+ * highlight is drawn on the original element.
+ */
+.drag_item_selected {
+	display: none;
+}
+
+
+/**
+ * The hint that indicates the new position
+ * of the dragged element.
+ */
+.drag_suggested_position {
+	border: 1px dashed #aaa;
+	list-style-type: none;
+}
+
+
+
+/**
+ * The "ghostly" copy of the object that follows
+ * the mouse cursor when dragging. While not durring
+ * a drag, this element is hidden.
+ */
+.drag_proxy {
+	background-color: #FFFFFF;
+	cursor: move;
+	border-style: 1px solid #aaa;
+	z-index: 999;
+	opacity: 0.8;
+	filter: Alpha(opacity=80);
+	
+	/* This is required by the javascript
+	 * core. Do not alter. */
+	position: absolute;
+	left: -1000px;
+	top: -1000px;
+	width: 0px;
+	height: 0px;
+	overflow: hidden;
+	visibility: hidden;
+}

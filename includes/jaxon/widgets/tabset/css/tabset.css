@@ -1,0 +1,138 @@
+/*********************************************************************************************
+**     This is the default skin for the tabset widget. 
+**     The CSS is on purpose verbose, so that in-page CSS will have as little bad influence 
+**     on the widget as possible.
+*********************************************************************************************/
+
+/*
+ * The outer tabset widget recipient.
+ */
+div.tabset {
+	zoom: 1; /* workaround to fix IE "has layout/margin collapsing" issues */
+}
+
+/*
+ * The body section of the widget (the one that holds the content).
+ * All body sections are hidden but the "active" one.
+ */
+div.tabset div.tabBody {
+	clear: both;
+	border: 1px solid #525F94;
+	display: none;
+	font-family: arial,helvetica,_sans;
+	font-size: 12px;
+	overflow: auto;
+	background-color: #ffffff; /*fondo del tab*/
+}
+
+
+/**
+ * The CONTENT of the widget itself.
+ */
+div.tabset div.tabBody div.tabContent{
+	margin: 4px;
+}
+
+
+/*
+ * The tab buttons
+ */
+div.tabset ul.tabset_tabs,
+div.tabset ul.tabset_tabs li.tab,
+div.tabset ul.tabset_tabs li.tab a {
+	margin: 0px;
+	padding: 0px;
+	display: block;
+	float: left;
+}
+
+/*
+ * The labels inside the tab buttons. 
+ * The right-hand part of the tab button skin is defined on this element.
+ */
+div.tabset ul.tabset_tabs li.tab a {
+	font-family: arial,helvetica,_sans;
+	font-size: 11px;
+	text-decoration: none;
+	color: #000000 !important; /*color del texto del tab*/
+	line-height: 19px;
+	padding-right: 4px;
+	background-image: url(../img/right_gradient_tabset.gif);
+	background-position: top right;
+	background-repeat: no-repeat;
+	margin-left: 3px;
+	outline-style: none;
+}
+
+/*
+ * The recipients of the tab buttons labels.
+ * The left-hand part of the tab button skin is defined on this element.
+ */
+div.tabset ul.tabset_tabs li.tab {
+	background-image: url(../img/left_gradient_tabset.gif);
+	background-position: top left;
+	background-repeat: no-repeat;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
+/*
+ * The recipient of the whole row of buttons.
+ * This element is used to add the extra space before the first left-hand button.
+ */
+div.tabset ul.tabset_tabs {
+	/*margin-left: 9px;*/
+	margin-left: -2px;
+}
+
+/*
+ * The "active" (current) body section.
+ */
+div.tabset div.body_active {
+	display: block;
+}
+
+/****************************************
+ *  Tab buttons in "SELECTED" state:
+ *  a tab button enters the selected 
+ *  state after the user has clicked it.
+ ****************************************/
+
+/*
+ * The labels inside the tab buttons (holding right-hand part of the button skin).
+ */
+div.tabset ul.tabset_tabs li.selected a {
+	background-image: url(../img/right_tabset.gif);
+	line-height: 22px;
+}
+
+/*
+ * The recipients of the tab buttons labels (holding left-hand part of the button skin).
+ */
+div.tabset ul.tabset_tabs li.selected {
+	background-image: url(../img/left_tabset.gif);
+	position: relative; /* this offers the windows native "selected tab in front" effect */
+	top: -2px;
+	margin-bottom: -3px;
+}
+
+/****************************************
+ *  DEGRADABLE CSS
+ *  When JavaScript is off, the body
+ *  sections of an inline tabset are all
+ *  visible.
+ ****************************************/
+
+/*
+ * The outer tabset widget recipient.
+ */
+div.htmlrendering {
+	position: relative;
+}
+
+/*
+ * The body (content) section of the widget in degradable mode.
+ */
+div.htmlrendering div.tabBody {
+	display: block;
+}

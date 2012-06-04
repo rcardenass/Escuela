@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_rsGrabar" value="name:CodAnio;datatype:int,name:NombreAnio;datatype:string,name:Estado;datatype:int" />
+</info>

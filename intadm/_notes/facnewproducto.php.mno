@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_rsTipoProducto" value="name:CodTipoProducto;datatype:int,name:NombreTipoProducto;datatype:string" />
+</info>

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_rsTipoPersonal" value="name:CodTipoPersonal;datatype:int,name:NombreTipoPersonal;datatype:string" />
+	<infoitem key="UD_rsTipoDocumento" value="name:CodTipoDocumento;datatype:int,name:NombreTipodocumento;datatype:string" />
+	<infoitem key="UD_rsDepartamento" value="name:CodDepartamento;datatype:int,name:NombreDepartamento;datatype:string" />
+</info>

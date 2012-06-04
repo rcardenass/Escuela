@@ -1,0 +1,186 @@
+/*********************************************************************************************
+**     This is the default skin for the dialog widget. 
+**     The CSS is on purpose verbose, so that in-page CSS will have as little bad influence 
+**     on the widget as possible.
+*********************************************************************************************/
+
+/**
+ * The semi-transparent page blur (the one that covers page content while dialog is visible).
+ */
+
+div#overlay {
+	display: none;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9998;
+	min-height:100%;
+	background-color: #525e94;
+	-moz-opacity: 0.45;
+	opacity: .45;
+	filter: alpha(opacity=45);
+}
+
+
+
+/**
+ * The outer recipient of the dialog widget (the one that contains dialog title, "close"
+ * button, loading indicator and dialog content).
+ */
+div#lightbox {
+	display: none;
+	position: absolute;
+	z-index: 9999;
+	overflow: hidden !important;
+	border: 1px solid #525F94;
+	background-color: #ffffff;
+}
+
+
+
+/**
+ * The recipient that holds the dialog title bar (which, in turn, holds the 
+ * title bar text and background, and the "close" button image).
+ */
+div#lightbox div.titleBar {
+	width: 100%;
+	height: 23px;
+	overflow: hidden;
+	border-bottom: 1px solid #525F94;
+	cursor: default;
+}
+
+
+
+/**
+ * The "close" button image inside the dialog title bar.
+ */
+div#lightbox div.titleBar a#link__lbClose img {
+	position: absolute;
+	right: 4px;
+	top: 5px;
+	border: none;
+	z-index: 2;
+	-moz-user-select: none;
+}
+
+
+
+/**
+ * The text inside the dialog title bar.
+ */
+div#lightbox div.titleBar p#titleText {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 3;
+	margin: 0px;
+	padding: 0px;
+	padding-left: 11px;
+	font-family: arial,helvetica,_sans;
+	font-size: 12px;
+	line-height: 23px;
+	color: #ffffff !important;
+	-moz-user-select: none;
+}
+
+
+
+/**
+ * The "background" layer of the title bar (note: using a simple CSS "background-image" 
+ * wasn't appropriate, as the fade animation causes it to flicker on each animation step).
+ */
+div#lightbox div.titleBar img#bgLayer {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	z-index: 1;
+	-moz-user-select: none;
+}
+
+
+
+/**
+ * The recipient for the content of the widget.
+ */
+div#lightbox div.contentArea {
+	width: 100%;
+	overflow: auto;
+}
+
+
+
+/**
+ * The content of the widget itself.
+ */
+div#lightbox div.contentArea div#widgetContent {
+	font-family: arial,helvetica,_sans;
+	font-size: 12px;
+	margin: 4px;
+	display: none;
+}
+
+/****************************************
+ *  Dialog in "LOADING" state:
+ *  the widget enters the loading state
+ *  until its content arrives via XHR
+ ****************************************/
+ 
+/**
+ * The loader indicator area of the widget, containing a spinning wheel icon and a
+ * customizable loading text. Loader is visible until dialog content loaded via XHR.
+ */
+div#lightbox.loading div#widgetLoader {
+	width: 50%;
+	height: 50%;
+	margin-left: 25%;
+	margin-top: 20%;
+}
+
+
+
+/**
+ * The spinning wheel icon of the loader.
+ */
+div#lightbox.loading div#widgetLoader div#loader_image {
+	background-image: url(../img/indicator.gif);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+
+
+/**
+ * The custom text of the loader.
+ */
+div#lightbox.loading div#widgetLoader #loader_text {
+	font-family: arial,helvetica,_sans;
+	font-size: 12px;
+	text-align: center;
+	margin: 4px;
+}
+
+
+/****************************************
+ *  Dialog in "DONE" state:
+ *  the widget enters the done state
+ *  after its content arrives via XHR
+ ****************************************/
+
+/**
+ * The loader indicator area (becomes hidden).
+ */
+div#lightbox.done div#widgetLoader {
+	display: none;
+}
+
+
+
+/**
+ * The content of the widget (becomes visible).
+ */
+div#lightbox.done div.contentArea div#widgetContent {
+	display: block;
+}

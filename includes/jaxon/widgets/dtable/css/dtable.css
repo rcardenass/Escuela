@@ -1,0 +1,216 @@
+/**
+ * Import style for loader.
+ */
+@import url(../../../css/loading.css);
+
+
+
+/*********************************************************************************************
+**     This is the default skin for the data table widget. 
+**     The CSS is on purpose verbose, so that in-page CSS will have as little bad influence 
+**     on the widget as possible.
+*********************************************************************************************/
+
+/**
+ * The outer widget container.
+ */
+.dtable table {
+	font-family: arial,helvetica,_sans;
+	font-size: 12px;
+	border: 1px solid #525e94;
+	border-collapse: collapse;
+}
+
+
+
+/**
+ * The widget upper caption, the one containing the navigation summary text.
+ */
+.dtable table caption {
+	font-family: arial,helvetica,_sans;
+	font-size: 12px;
+	color: #525e94;
+	font-weight: bold;
+	margin: 0px;
+	padding: 0px;
+}
+
+
+
+/**
+ * The widget sortable headers, the ones holding the sorting links and the
+ * ASC/DESC icons. Also used for drawing the gradient tab of the skin.
+ */
+.dtable table th {
+	background-image: url(../img/gradient_tab_blue.gif);
+	background-repeat: repeat-x;
+	font-weight: normal;
+	border: 1px solid #abb6ec;
+}
+
+
+
+/**
+ * The sorting links inside the sortable headers. Also used for drawing the 
+ * sorting direction icons of the skin ("ascending"/"descending");
+ */
+.dtable table th a {
+	font-family: arial,helvetica,_sans;
+	font-size: 12px;
+	color: #ffffff !important;
+	text-decoration: none;
+	line-height: 23px;
+	display: block;
+	margin: 0px 4px 0px 4px;
+	padding-right: 15px;
+	zoom: 1; /* workaround to fix IE "hasLayout / margin collapse" issues */
+}
+
+
+
+/**
+ * The secondary header of the widget, the one containing column filters.
+ */
+.dtable table tr.filter th {
+	background-image: none;
+	background-color: #818BAF;
+}
+
+
+
+
+/**
+ * The filters inside the secondary header of the table. The ones user can
+ * type filter text in or select from a list of options.
+ */
+.dtable table tr.filter th input,
+.dtable table tr.filter th select {
+	border: none;
+	margin: 3px 4px 3px 4px;
+	overflow: hidden;
+	font-family: arial,helvetica,_sans;
+	font-size: 12px;
+	color: #000000;
+	line-height: 16px;
+}
+
+
+
+/**
+ * The filter submit button inside the secondary header of the table.
+ */
+.dtable table tr.filter th input.filterButton {
+	background-color: #D6D5D3;
+	padding: 0 4px 0 4px;
+	border: 1px solid;
+	border-color: #505C91 #262837 #262837 #505C91;
+}
+
+
+
+/**
+ * The data cells (where the actual content retrieved by the widget goes).
+ */
+.dtable table tbody.data td {
+	border: 1px solid #B4B1E6;
+	padding: 3px 4px 3px 4px;
+}
+
+
+
+/**
+ * The links inside the widget content (usually, the "details" links user can 
+ * click on to go to a related page.
+ */
+.dtable table tbody.data td a {
+ 	color: #4262C7;
+}
+
+
+
+/**
+ * The widget footer area (the one containing the linear navigation buttons).
+ */
+.dtable table tfoot,
+.dtable table tfoot table,
+.dtable table tfoot tr td {
+	background-color: #818BAF;
+	border: none;
+	text-align: center;
+}
+
+
+
+/**
+ * The linear navigation buttons inside the footer area of the widget.
+ * Classic image replace technique here.
+ */
+.dtable table tfoot tr td a span.noImg {
+	visibility: hidden;
+	font-size: 1px;
+	line-height: 16px;
+}
+.dtable table tfoot tr td a {
+	text-decoration: none;
+	display: block;
+	height: 12px;
+	width: 15px;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	background-position: top center;
+	outline-style: none;
+}
+
+
+
+/**
+ * The "FIRST" button.
+ */
+.dtable table tfoot tr td a.toFirst {
+	width: 15px;
+	background-image: url(../img/double_arrow_left.gif);
+}
+
+
+
+/**
+ * The "PREVIOUS" button.
+ */
+.dtable table tfoot tr td a.toPrev {
+	background-image: url(../img/arrow_left.gif);
+}
+
+
+
+/**
+ * The "NEXT" button.
+ */
+.dtable table tfoot tr td a.toNext {
+	background-image: url(../img/arrow_right.gif);
+}
+
+
+
+/**
+ * The "NEXT" button.
+ */
+.dtable table tfoot tr td a.toLast {
+	background-image: url(../img/double_arrow_right.gif);
+}
+
+
+
+/**
+ * The sorting order icons -- they update after each click on a header
+ * and display the sorting order (ascending or descending).
+ */
+.dtable table th.ASC a {
+	background-image: url(../img/arrow_up.gif);
+	background-repeat: no-repeat;
+	background-position: center right;
+}
+.dtable table th.DESC a {
+	background-image: url(../img/arrow_down.gif);
+	background-repeat: no-repeat;
+	background-position: center right;
+}

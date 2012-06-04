@@ -1,0 +1,139 @@
+/*********************************************************************************************
+**     This is the default skin for the accordion widget. 
+**     The CSS is on purpose verbose, so that in-page CSS will have as little bad influence 
+**     on the widget as possible.
+*********************************************************************************************/
+
+/**
+ * The outer accordion widget recipient
+ */
+div.accordion {
+	border: 1px solid #525F94;
+    background-color: white;
+	zoom: 1; /* workaround to fix IE "has layout/margin collapsing" issues */
+}
+
+
+
+/**
+ * The "regions" of the widget (the sections with clickable headers and
+ * content bodies). Only one "selected" region is showing at a time.
+ */
+div.accordion div.region {
+}
+
+
+
+/**
+ * The "bodies" recipients of the "regions" (the elements that actually hold
+ * widget content).
+ */
+div.accordion div.region div.accordionBody {
+	font-family: arial,helvetica,_sans;
+	font-size: 12px;
+}
+
+
+
+/**
+ * The CONTENT of the bodies itself.
+ */
+div.accordion div.region div.accordionBody div.accordionContent {
+	margin: 4px;
+}
+
+
+
+/**
+ * The clickable header found on each region.
+ */
+div.accordion div.region h3,
+div.accordion div.region h3 a {
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	outline-style: none;
+}
+
+
+
+/**
+ * The label inside the clickable header (also used for drawing the arrow
+ * icon of the skin).
+ */
+div.accordion div.region h3 a {
+	font-family: arial,helvetica,_sans;
+	text-decoration: none;
+	line-height: 23px;
+	color: #ffffff !important;
+	padding-left: 16px;
+	background-image: url(../img/arrow_right.gif);
+	background-repeat: no-repeat;
+	background-position: center right;
+	margin-right: 4px;
+}
+
+
+
+/**
+ * The clickable header itself (also used for drawing the gradient 
+ * background of the skin).
+ */
+div.accordion div.region h3 {
+	font-weight: normal;
+	font-size: 12px;
+	background-image: url(../img/gradient_tab_blue.gif);
+	background-repeat: repeat-x;
+	border-bottom: 1px solid #525F94;
+}
+
+
+
+/****************************************
+ *  Region headers in "SELECTED" state:
+ *  A header enters the selected state
+ *  when the related region is expanded.
+ ****************************************/
+
+/**
+ * The label inside the clickable header (changes the arrow icon).
+ */ 
+div.accordion div.selected h3 a {
+	background-image: url(../img/blue_arrow_down.gif);	
+}
+
+
+
+/**
+ * The clickable header in selected state (changes the gradient 
+ * background).
+ */
+div.accordion div.selected h3 {
+	background-image: url(../img/gradient_tab_orange.gif);
+}
+
+
+
+/****************************************
+ *  DEGRADABLE CSS
+ *  When JavaScript is off, the body
+ *  sections of all regions must be
+ *  visible.
+ ****************************************/
+
+/**
+ * The outer accordion widget recipient: cut the unnecesary
+ * vertical (reserved) space.
+ */ 
+div.accordion,
+div.phprendering {
+	height: auto !important;
+}
+
+/**
+ * The clickable header (force the click to work on full
+ * header length).
+ */
+div.phprendering div.selected h3 {
+	width: 100% !important;
+}

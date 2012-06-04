@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_rsAnio" value="name:CodAnio;datatype:int,name:NombreAnio;datatype:string" />
+	<infoitem key="UD_rsGrado" value="name:CodGrado;datatype:int,name:NombreGrado;datatype:string" />
+</info>

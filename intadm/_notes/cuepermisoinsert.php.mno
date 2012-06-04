@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_rsPadre" value="name:IdPadre;datatype:int" />
+	<infoitem key="UD_rsPapa" value="name:Id;datatype:int,name:NombrePrograma;datatype:string,name:IdPadre;datatype:int" />
+</info>

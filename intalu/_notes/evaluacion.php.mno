@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_rsCursos" value="name:CodCurGra;datatype:int,name:Curso;datatype:string,name:CodAnio;datatype:int,name:CodGrado;datatype:int,name:CodSeccion;datatype:int,name:CodMatricula;datatype:int" />
+	<infoitem key="UD_rsBimestre" value="name:CodBimestre;datatype:int,name:NombreBimestre;datatype:string" />
+	<infoitem key="UD_rsEvaluacion" value="name:Nota;datatype:int" />
+</info>

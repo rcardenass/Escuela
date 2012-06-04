@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="MM_css_include" value="file:///C|/Documents and Settings/rcardenas/Datos de programa/Macromedia/Dreamweaver 8/Configuration/Temp/InterAKT/DesignTime/intadmfacconceptophp1_tabset.css,file:///C|/Users/ruben.cardenas/AppData/Roaming/Macromedia/Dreamweaver 8/Configuration/Temp/InterAKT/DesignTime/intadmfacconceptophp1_tabset.css,file:///C|/Users/Cardenas/AppData/Roaming/Macromedia/Dreamweaver 8/Configuration/Temp/InterAKT/DesignTime/intadmfacconceptophp1_tabset.css" />
+	<infoitem key="UD_rsConcepto" value="name:Id;datatype:int,name:CodTipoProducto;datatype:int,name:Producto;datatype:string,name:Precio;datatype:real,name:Dscto;datatype:real" />
+</info>

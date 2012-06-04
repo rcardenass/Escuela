@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_rsCodigoMatricula" value="name:CodCriterio;datatype:int" />
+	<infoitem key="UD_rsCriterio" value="name:CodCriterio;datatype:int" />
+	<infoitem key="UD_rsCriterioCurso" value="name:CodCriterioCurso;datatype:int" />
+	<infoitem key="UD_rsValidar" value="name:Cantidad;datatype:int" />
+</info>

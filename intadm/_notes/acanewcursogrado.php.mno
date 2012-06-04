@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_rsPrograma" value="name:CodProgramaAcademico;datatype:int,name:Programa;datatype:string" />
+	<infoitem key="UD_rsArea" value="name:CodArea;datatype:int,name:NombreArea;datatype:string" />
+	<infoitem key="UD_rsCurso" value="name:CodCurso;datatype:int,name:NombreCurso;datatype:string" />
+	<infoitem key="UD_rsGrado" value="name:CodGrado;datatype:int,name:NombreGrado;datatype:string" />
+</info>

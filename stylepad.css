@@ -1,0 +1,142 @@
+/* CSS Document */
+
+.Logo{
+	background:url(imagenes/sistema/logoadm.jpg);
+	/*background-repeat:repeat-x;*/
+}
+.Menu{
+	/*background:url(imagenes/sistema/menuadm.jpg);*/
+	background:#7EACCA;
+}
+.Contenedor{
+	background:#ECECEC;
+}
+.Pie{
+	background:url(imagenes/sistema/pieadm.jpg)
+}
+.NombreUsuario{
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: #333333;
+	font-size: 11px;
+}
+.NombreUsuarioGrande{
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: #333333;
+	font-size: 14px;
+}
+.NombreFecha{
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	color: #555666;
+	font-size: 13px;
+}
+
+h1
+{
+	font-size: large;
+	color: #333333;
+	padding-top:9px;
+	font-style: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	 
+}
+hr {
+	border-top: 2px solid #333333;
+	height: -14px;
+	border-left-style: none;
+	border-left-color: inherit;
+	border-left-width: 0;
+	border-right-style: none;
+	border-right-color: inherit;
+	border-right-width: 0;
+	border-bottom-style: none;
+	border-bottom-color: inherit;
+	border-bottom-width: 0;
+}
+.table {
+	background:#ffffff;
+	border-style:solid;
+	border-color:#F6C05E;
+	bordercolor:#F6C05E;
+	
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-right-color: #EBE9BC;
+	border-bottom-color: #EBE9BC;
+
+	font-family: sans-serif;
+	font-size:13px;
+}
+.tr {
+	background:#E5F3FA;
+	border:#00000;
+	font-weight:bold;
+}
+.label {
+	font-size: 15px;
+	color: #666666;
+	padding-top:9px;
+	font-style: normal;
+	font-weight:bold;
+	font-family: Arial, Helvetica, sans-serif;
+	vertical-align:sub;
+}
+/*input {
+	background:#FFFFB0;
+}*/
+input[type="text"]  {
+	font-family: Tahoma, Verdana, Arial; 
+	color: #454545; 
+	background-color: #F6C05E; 
+	border: #000099; 
+	border-style: solid; 
+	border-top-width: 1px; 
+	border-right-width: 1px; 
+	border-bottom-width: 1px; 
+	border-left-width: 1px 
+}
+
+input[type="submit"]  {
+	background-color : #53A2CD;
+	border: 1px solid #008000;
+}
+
+input[type="button"]  {
+	background-color : #53A2CD;
+	border: 1px solid #008000;
+}
+
+select { 
+	font-family: Tahoma, Verdana, Arial; 
+	color: #454545; 
+	background-color: #F6C05E; 
+	border: #000099; 
+	border-style: solid; 
+	border-top-width: 1px; 
+	border-right-width: 1px; 
+	border-bottom-width: 1px; 
+	border-left-width: 1px
+}
+
+textarea {
+	font-family: Tahoma, Verdana, Arial; 
+	color: #454545; 
+	background-color: #F6C05E; 
+	border: #000099; 
+	border-style: solid; 
+	border-top-width: 1px; 
+	border-right-width: 1px; 
+	border-bottom-width: 1px; 
+	border-left-width: 1px 
+}
+
+a {text-decoration: none;} 
+/*a:hover {text-decoration: underline;} */
+.EmpresaPie{
+	font-family: Arial, Helvetica, sans-serif;
+	font-style: italic;
+	font-size: 12px;
+}

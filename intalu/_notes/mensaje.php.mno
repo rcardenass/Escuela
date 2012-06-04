@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_rsCursos" value="name:CodCurGra;datatype:int,name:Curso;datatype:string,name:CodAnio;datatype:int,name:CodGrado;datatype:int,name:CodSeccion;datatype:int" />
+	<infoitem key="UD_rsMensajes" value="name:CodMensaje;datatype:int,name:De;datatype:string,name:Fecha;datatype:datetime,name:Asunto;datatype:string,name:Mensaje;datatype:string" />
+</info>

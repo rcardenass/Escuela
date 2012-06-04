@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_rsTipoPersonal" value="name:CodTipoPersonal;datatype:int,name:NombreTipoPersonal;datatype:string" />
+	<infoitem key="UD_rsTipoDocumento" value="name:CodTipoDocumento;datatype:int,name:NombreTipodocumento;datatype:string" />
+	<infoitem key="UD_rsDepartamento" value="name:CodDepartamento;datatype:int,name:NombreDepartamento;datatype:string" />
+	<infoitem key="UD_rsTreeview" value="name:Id;datatype:int,name:Nombre;datatype:string,name:IdPadre;datatype:int,name:Url;datatype:string" />
+	<infoitem key="UD_rsProvincia" value="name:CodProvincia;datatype:int,name:CodDepartamento;datatype:int,name:NombreProvincia;datatype:string" />
+	<infoitem key="UD_rsDistrito" value="name:CodDistrito;datatype:int,name:CodProvincia;datatype:int,name:NombreDistrito;datatype:string" />
+	<infoitem key="UD_rsEditar" value="name:CodPersonal;datatype:int,name:CodTipoPersonal;datatype:int,name:ApellidoPaterno;datatype:string,name:ApellidoMaterno;datatype:string,name:Nombres;datatype:string,name:Sexo;datatype:string,name:CodTipoDocumento;datatype:int,name:NumeroDocumento;datatype:string,name:CodDepartamento;datatype:int,name:CodProvincia;datatype:int,name:CodDistrito;datatype:int,name:Direccion;datatype:string,name:Referencia;datatype:string,name:Telefono;datatype:string,name:Celular;datatype:string,name:Rpc;datatype:string,name:Rpm;datatype:string,name:Nextel;datatype:string,name:EmailPersonal;datatype:string,name:EmailInstitucional;datatype:string,name:UsuarioId;datatype:string" />
+</info>

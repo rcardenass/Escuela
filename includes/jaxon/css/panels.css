@@ -1,0 +1,160 @@
+@import url(../widgets/tooltip/css/tooltip.css);
+@import url(loading.css);
+
+/*
+* Begin layout
+*/
+
+html {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	margin: 10px;
+	padding: 0px;
+}
+
+p {
+	margin: 0 0 10px 0;
+}
+
+#wrapper {
+	width: 800px;
+	margin: auto;
+	padding: 10px 0;
+}
+
+#header {
+}
+
+#header a {
+	color: #ffffff !important;
+	font-weight: bold;
+}
+
+#left {
+	width: 175px;
+	margin: 10px 10px 10px 0;
+	float: left;
+}
+
+.twocols #center {
+	width: 615px;
+	margin: 10px 0;
+	float: left;
+    /* height: 550px; */  /* set height for the main container if you want the footer to be set at a fixed position*/
+}
+
+.threecols #center {
+	width: 445px;
+	margin: 10px 0;
+	float: left;
+    /* height: 550px; */  /* set height for the main container if you want the footer to be set at a fixed position*/
+}
+
+.threecols #right {
+	width: 155px;
+	margin: 10px 0 10px 10px;
+	float: left;
+}
+
+#footer
+{
+	clear: both;
+}
+
+/*
+* End layout
+*/
+
+
+.panel_class {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+	.hidden {
+		display: none;
+	}
+
+/* rounded corners styles */
+.artop,.arbottom, .artop b, .arbottom b {display:block;}
+.artop b, .arbottom b {height: 1px; overflow: hidden;font-size:1px}
+b.r1 {margin: 0 3px;}
+b.r2 {margin: 0 2px;}
+b.r3 {margin: 0 1px;}
+
+.clear {
+	clear: both;
+	height: 0;
+	overflow: hidden;
+}
+
+/* up/down borders */
+b.r1 {background-color: #525e94 !important;}
+
+/* gradient style */
+	.gradient_rounded b.artop b, .gradient_rounded .rcontent, .gradient_rounded b.arbottom b {
+		background: url(images/gradient.gif) repeat-x;
+		border: 1px solid #525e94;
+		border-width: 0 1px;
+	}
+
+	.gradient_rounded .rcontent {
+		background-color: #F5F6F9;
+	}
+
+/* white style */
+	.white_rounded b.artop b, .white_rounded b.arbottom b, .white_rounded .rcontent {
+		background-color: #FFF;
+		border: 0 solid #525e94;
+		border-width: 0 1px;
+	}
+
+td {
+	vertical-align: top;
+}
+
+.panel_class div {
+	zoom: 1;
+}
+
+.panel_class div h1 {
+	margin: 0px;
+}
+
+/**
+ * Default fonts inside a pannel.
+ */ 
+div.rcontent {
+	padding: 4px !important;
+}
+
+div.panel_class div.rcontent{
+	font-family: arial,helvetica,_sans;
+	font-size: 12px;
+	color: #000000;
+}
+
+div.panel_class div.rcontent h1, h2, h3, h4, h5, h6 {
+	margin: 12px 4px 8px 4px;
+}
+
+div.panel_class div.rcontent hr {
+	height: 1px;
+	color: #000000;
+	background-color: #000000;
+	border: none;
+}
+/*
+div.panel_class div.rcontent a {
+	color: #2D76D8;
+	text-decoration: none;
+}
+*/
+
+.panel__content {
+
+}

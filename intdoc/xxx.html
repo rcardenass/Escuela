@@ -1,0 +1,73 @@
+<script>
+function todos(chkbox)
+{
+for (var i=0;i < document.forms[0].elements.length;i++)
+{
+var elemento = document.forms[0].elements[i];
+if (elemento.type == "checkbox")
+{
+elemento.checked = chkbox.checked
+}
+}
+}
+</script>
+<form name="formulario" method="post" action="">
+<table width="300" border="0" align="center" cellpadding="2" cellspacing="1">
+<tr> 
+<td width="12" bgcolor="#eeeeeee"><font size="2" face="verdana"> 
+<input type="checkbox" name="checkbox" value="checkbox">
+&nbsp;Emails</font></td>
+</tr>
+<tr> 
+<td bgcolor="#999999"><font size="2" face="verdana"> 
+<input type="checkbox" name="checkbox2" value="checkbox">
+&nbsp;Asp</font></td>
+</tr>
+<tr> 
+<td bgcolor="#eeeeeee"><font size="2" face="verdana"> 
+<input type="checkbox" name="checkbox3" value="checkbox">
+&nbsp;Php</font></td>
+</tr>
+<tr> 
+<td bgcolor="#999999"><font size="2" face="verdana"> 
+<input type="checkbox" name="checkbox4" value="checkbox">
+&nbsp;Cgi</font></td>
+</tr>
+<tr> 
+<td bgcolor="#eeeeeee"><font size="2" face="verdana"> 
+<input type="checkbox" name="checkbox5" value="checkbox">
+&nbsp;Visualbasic</font></td>
+</tr>
+<tr> 
+<td bgcolor="#999999"><font size="2" face="verdana"> 
+<input type="checkbox" name="checkbox6" value="checkbox">
+&nbsp;Asp.net</font></td>
+</tr>
+<tr> 
+<td bgcolor="#eeeeeee"><font size="2" face="verdana"> 
+<input type="checkbox" name="checkbox7" value="checkbox">
+&nbsp;Applets</font></td>
+</tr>
+<tr> 
+<td bgcolor="#999999"><font size="2" face="verdana"> 
+<input type="checkbox" name="checkbox8" value="checkbox">
+&nbsp;Foros</font></td>
+</tr>
+<tr> 
+<td bgcolor="#eeeeeee"><font size="2" face="verdana"> 
+<input type="checkbox" name="checkbox9" value="checkbox">
+&nbsp;Tutores</font></td>
+</tr>
+<tr> 
+<td bgcolor="#999999"><font size="2" face="verdana"> 
+<input type="checkbox" name="checkbox10" value="checkbox">
+&nbsp;Tutoriales</font></td>
+</tr>
+<tr> 
+<td bgcolor="#990000"><input type="checkbox" name="checkbox11" value="checkbox" onClick="todos(this);"> 
+<font color="#FFFFFF" size="2" face="Verdana"><strong>&nbsp;Seleccionar 
+todos Todos</strong></font></td>
+</tr>
+</table>
+
+</form>

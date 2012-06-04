@@ -1,0 +1,2 @@
+[21-Nov-2011 18:50:14] PHP Fatal error:  Call to undefined method datos::ObtenerRetiradoSelAll() in /home/cepsanrt/public_html/intranet/intadm/php/acaretirado.php on line 51
+[22-Nov-2011 06:33:31] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Unable to save result set in /home/cepsanrt/public_html/intranet/clases/datos.php on line 451

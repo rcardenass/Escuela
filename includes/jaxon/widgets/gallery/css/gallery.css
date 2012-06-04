@@ -1,0 +1,119 @@
+@import url(../../tooltip/css/tooltip.css);
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.clearfix {display: inline-block;} 
+ 
+/* Hides from IE-mac \*/ 
+* html .clearfix {height: 1%;} 
+.clearfix {display: block;} 
+/* End hide from IE-mac */ 
+
+
+.gallery {
+	text-align: center;
+}
+
+.gallery .gcontent {
+	border:	1px solid #525e94;
+}
+
+.gallery .glist {
+	/*margin: 5px 0 0 0;*/
+}
+
+.gallery .glist_before {
+	margin: 0 0 5px 0;
+}
+.gallery .glist_after {
+	margin: 5px 0 0 0;
+}
+
+
+.gallery .glist .gleft,
+.gallery .glist .gright {
+	width: 11px;
+	height: 100%;
+}
+
+.gallery .glist .gleft a,
+.gallery .glist .gright a {
+	background-repeat: no-repeat;
+	background-position: left center;
+	height: 68px;
+	border: 1px solid #525e94;
+	cursor: pointer;
+	outline-style: none;
+}
+
+.gallery .glist .gleft {
+	float:left;
+	left: 0px;
+}
+.gallery .glist .gleft a {
+	display: block;
+	height: 70px;
+	background-image: url(../img/left.png);
+}
+.gallery .glist .gleft a:hover {
+	border: 1px solid #377bdc;
+	background-image: url(../img/left_hover.png);
+}
+.gallery .glist .gright {
+	float: right;
+	clear: right;
+	right: 0px;
+}
+.gallery .glist .gright a {
+	display: block;
+	height: 70px;
+	background-image:url(../img/right.png);
+}
+.gallery .glist .gright a:hover {
+	border: 1px solid #377bdc;
+	background-image: url(../img/right_hover.png);
+}
+.gallery .glist .gthumbs {
+	border-top: 1px solid #525e94;
+	border-bottom: 1px solid #525e94;
+	float:left;
+	height: 70px;
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+	white-space: nowrap !important;
+	text-align: left;
+}
+
+/* the height here should be .thumbs height - (margin top + margin bottom) */
+.gallery .glist .gthumbs div {
+	overflow: hidden;
+	margin: 4px;
+	border: 1px solid #525e94;
+	width: 58px;
+	height: 60px;
+	text-align: center;
+}
+.gallery .glist .gthumbs div.hover {
+	border: 1px solid #377bdc;
+	margin: 4px;
+	cursor: pointer;
+}
+.gallery .glist .gthumbs div.viewing {
+	border: 3px solid #377bdc;
+	margin: 2px;
+}
+.gallery .glist .gthumbs img {
+	margin-top: 10px;
+}
+.big_image_loading {
+	background-image: url(../img/indicator.gif);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}

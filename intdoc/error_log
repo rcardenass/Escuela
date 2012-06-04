@@ -1,0 +1,3 @@
+[15-Sep-2011 21:54:48] PHP Warning:  mysql_free_result(): 9 is not a valid MySQL result resource in /home/cepsanrt/public_html/intranet/intdoc/alumnos.php on line 196
+[15-Sep-2011 21:55:22] PHP Warning:  mysql_free_result(): 26 is not a valid MySQL result resource in /home/cepsanrt/public_html/intranet/intdoc/registro.php on line 420
+[04-Oct-2011 16:31:01] PHP Warning:  Unknown: Your script possibly relies on a session side-effect which existed until PHP 4.2.3. Please be advised that the session extension does not consider global variables as a source of data, unless register_globals is enabled. You can disable this functionality and this warning by setting session.bug_compat_42 or session.bug_compat_warn to off, respectively in Unknown on line 0

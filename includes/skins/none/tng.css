@@ -1,0 +1,26 @@
+/* The client-side error displaying */
+
+	/* How the label should change on error */
+	.form_validation_field_error_label {
+		/* color:#cc0000; */
+	}
+
+	/* How the input's container (TD) should change on error */
+	.form_validation_field_error_container {
+		/* border: 2px solid black; */
+	}
+
+	/* How the input textfield should change on error */
+	.form_validation_field_error_text {
+		/* border:2px solid #cc0000; */
+	}
+
+	/* The actual error message style */
+	.form_validation_field_error_error_message {
+		color:#ff0000;
+		clear:left;
+	}
+	form.form_validation_form_error table {
+		border: 2px solid red;
+	} 
+

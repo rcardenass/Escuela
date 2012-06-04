@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_Recordset1" value="name:CodCurso;datatype:int,name:NombreCurso;datatype:string,name:Estado;datatype:int" />
+	<infoitem key="UD_rsValida" value="name:Cantidad;datatype:int" />
+</info>

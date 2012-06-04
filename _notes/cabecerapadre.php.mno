@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_rsCabecera" value="name:Apellidos;datatype:string,name:Nombres;datatype:string,name:NombrePerfil;datatype:string,name:Codigo;datatype:string,name:Login;datatype:string" />
+</info>

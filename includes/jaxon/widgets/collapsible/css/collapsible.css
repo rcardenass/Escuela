@@ -1,0 +1,128 @@
+/*********************************************************************************************
+**     This is the default skin for the collapsible widget. 
+**     The CSS is on purpose verbose, so that in-page CSS will have as little bad influence 
+**     on the widget as possible.
+*********************************************************************************************/
+/**
+ * The outer recipient of the collapsible widget.
+ */
+div.collapsible {
+	border: 1px solid #525F94;
+	background-color: #ffffff;
+	zoom: 1; /* workaround to fix IE "hasLayout / margin collapse" issues */
+}
+
+
+
+/**
+ * The "body" region of the widget (the one that holds the content).
+ * This area is visible only when the widget is in "open" state.
+ */
+div.collapsible div.collapsibleBody {
+	font-family: arial,helvetica,_sans;
+	font-size: 12px;
+	display: none;
+	overflow: auto;
+	zoom: 1; /*workaround to fix IE "hasLayout / margin collapse" issues*/
+}
+
+
+
+/**
+ * The CONTENT of the widget itself.
+ */
+div.collapsible div.collapsibleBody div.collapsibleContent {
+	margin: 4px;
+}
+
+
+
+/**
+ * The clickable area of the widget (the one that expands/collapses the content).
+ */
+div.collapsible h3,
+div.collapsible h3 a {
+	margin: 0px;
+	padding: 0px;
+	display: block;
+	overflow: auto; /* workaround to fix IE "link-block-no-layout" issue */
+}
+
+
+
+/** 
+ * The labels inside the clickable area (also used for displaying the arrow icon of the skin).
+ */
+div.collapsible h3 a {
+	font-family: arial,helvetica,_sans;
+	font-size: 12px;
+	text-decoration: none;
+	line-height: 23px;
+	color: #ffffff !important;
+	padding-left: 11px;
+	background-image: url(../img/arrow_down.gif);
+	background-repeat: no-repeat;
+	background-position: center right;
+	margin-right: 4px;
+	outline-style: none;
+}
+
+
+
+/** 
+ * The headers inside the clickable area (recipients for the labels).
+ */
+div.collapsible h3 {
+	font-weight: normal;
+	width: 100%; /* workaround to fix IE "link-block-no-layout" issue */
+	background-image: url(../img/gradient_tab_blue.gif);
+	background-repeat: repeat-x;
+	border-bottom: 1px solid #525F94;
+}
+
+
+
+/****************************************
+ *  Collapsible in "OPEN" state:
+ *  the widget enters the open state 
+ *  after the user has expanded it.
+ ****************************************/
+ 
+/**
+ * The "body" region of the widget (shown only in "open" state).
+ */
+div.collapsible_open div.collapsibleBody {
+	display: block;
+}
+
+
+
+/**
+ * The labels inside the clickable area (change the arrow icon while in "open" state).
+ */
+div.collapsible_open h3 a {
+	background-image: url(../img/arrow_up.gif);
+}
+
+
+
+/****************************************
+ *  DEGRADABLE CSS
+ *  When JavaScript is off, the content
+ *  of the "body" region of an inline
+ *  collapsible widget must be visible.
+ ****************************************/
+
+/**
+ *  The "body" region of the widget (enforced to be visible).
+ */
+div.collapsible_phprendering div.collapsibleBody {
+	display: block;
+}
+
+/**
+ * The labels inside the clickable area (enforced up arrow icon).
+ */
+div.collapsible_phprendering h3 a {
+	background-image: url(../img/arrow_up.gif);
+}
